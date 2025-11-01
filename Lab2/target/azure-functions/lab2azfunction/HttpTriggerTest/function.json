@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../Lab2-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.function.HttpTriggerTest.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "POST" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
